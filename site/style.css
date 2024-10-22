@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Fonte padrão para o corpo */
     margin: 0;
     padding: 0;
     padding-top: 80px;
@@ -8,7 +8,7 @@ body {
 header {
     display: flex;
     align-items: center;
-    background-color: #4CAF50;
+    background-color: #00c6c7;
     color: white;
     padding: 15px;
     justify-content: space-between;
@@ -18,8 +18,16 @@ header {
     z-index: 1000;
 }
 
+/* Nova fonte para h1 e navbar */
+@font-face {
+    font-family: 'NovaFonteNavbar'; /* Nome da nova fonte */
+    src: url('fontes/Meowcat.ttf') format('truetype'); /* Ajuste o caminho */
+}
+
 h1 {
     margin: 0;
+    font-family: 'NovaFonteNavbar', sans-serif; /* Nova fonte no h1 */
+    font-size: 3rem; /* Aumentei o tamanho da fonte do h1 */
 }
 
 nav {
@@ -33,10 +41,12 @@ nav a {
     margin: 0 15px;
     padding: 5px 10px;
     transition: background-color 0.3s;
+    font-family: 'NovaFonteNavbar', sans-serif; /* Nova fonte na navbar */
+    font-size: 1.5rem; /* Aumenta o tamanho da fonte da navbar */
 }
 
 nav a:hover {
-    background-color: #45a049;
+    background-color: #009092;
 }
 
 .logo {
@@ -45,10 +55,13 @@ nav a:hover {
 }
 
 footer {
-    background-color: #333;
+    background-color: #00c6c7;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px 10px 10px; /* Aumente o padding-top */
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 main {
@@ -74,7 +87,9 @@ main {
 }
 
 h2 {
+    color: #00c6c7;
     text-align: left; /* Alinha o h2 à esquerda */
+    font-family: 'MinhaFonte', sans-serif; /* Mantém a fonte anterior nos h2 */
 }
 
 .conteudo-texto.centralizado {
@@ -127,4 +142,17 @@ p {
     padding: 10px;
     cursor: pointer;
     border-radius: 5px;
+    font-family: 'MinhaFonte', sans-serif; /* Fonte do DaFont nos botões */
+}
+
+/* Fonte personalizada */
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url('fontes/Lemon Tea.ttf') format('truetype'); /* Ajuste o caminho */
+}
+.centralizar {
+    text-align: center; /* Centraliza o texto */
+}
+.conteudo-texto p:last-child {
+    margin-bottom: 20px; /* Ajuste o valor conforme necessário */
 }
