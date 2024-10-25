@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif; 
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     padding-top: 80px;
@@ -96,6 +96,7 @@ p {
     margin: 0;
 }
 
+/* Estilos do Carousel */
 .carousel {
     display: flex;
     overflow: hidden;
@@ -148,7 +149,7 @@ p {
     src: url('fontes/Lemon Tea.ttf') format('truetype');
 }
 
-.centralizar {  
+.centralizar {
     text-align: center;
 }
 
@@ -210,22 +211,19 @@ p {
     color: #ab75fa;
 }
 
-/* Responsividade */
+/* Media Queries para responsividade */
 @media (max-width: 768px) {
     nav a {
         font-size: 1.2rem; /* Tamanho da fonte da navbar em dispositivos móveis */
     }
 
     .container {
-        flex-direction: column; /* Alinha imagem e texto em coluna */
+        flex-direction: column; /* Organiza itens em coluna */
+        align-items: center; /* Centraliza os itens */
     }
 
     .imagem-esquerda {
-        margin-right: 0; /* Remove margem direita */
-        margin-bottom: 20px; /* Adiciona espaço abaixo da imagem */
-    }
-
-    .imagem-somos {
-        margin-top: 20px; /* Espaço acima da imagem na seção 'Quem somos?' */
+        margin: 20px 0; /* Espaço em cima e embaixo da imagem */
+        max-width: 100%; /* Garante que a imagem não ultrapasse a tela */
     }
 }
