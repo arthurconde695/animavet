@@ -8,7 +8,7 @@ body {
 header {
     display: flex;
     align-items: center;
-    background-color: #00c6c7;
+    background-color: #8356f4;
     color: white;
     padding: 15px;
     justify-content: space-between;
@@ -46,16 +46,11 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #009092;
-}
-
-.logo {
-    height: 50px;
-    margin-left: 20px;
+    background-color: #ab75fa;
 }
 
 footer {
-    background-color: #00c6c7;
+    background-color: #8356f4;
     color: white;
     text-align: center;
     padding: 20px 10px 10px; /* Aumente o padding-top */
@@ -87,7 +82,7 @@ main {
 }
 
 h2 {
-    color: #00c6c7;
+    color: #8356f4;
     text-align: left; /* Alinha o h2 à esquerda */
     font-family: 'MinhaFonte', sans-serif; /* Mantém a fonte anterior nos h2 */
 }
@@ -142,7 +137,7 @@ p {
 }
 
 .carousel-button {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: #aa75faa4;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -156,7 +151,7 @@ p {
     src: url('fontes/Lemon Tea.ttf') format('truetype'); /* Ajuste o caminho */
 }
 
-.centralizar {
+.centralizar {  
     text-align: center; /* Centraliza o texto */
 }
 
@@ -166,14 +161,15 @@ p {
 
 /* Estilos do link da vacina */
 .link-vacina {
+    font-size: 1.5rem;
     font-family: 'NovaFonteNavbar', sans-serif; /* Altere para a fonte desejada */
-    color: #ff5733; /* Altere para a cor desejada */
+    color: #8356f4; /* Altere para a cor desejada */
     text-decoration: underline; /* Adiciona sublinhado ao link */
     cursor: pointer; /* Muda o cursor para indicar que é um link */
 }
 
 .link-vacina:hover {
-    color: #c70039; /* Cor ao passar o mouse */
+    color: #ab75fa; /* Cor ao passar o mouse */
 }
 
 .imagem-somos {
@@ -186,7 +182,7 @@ p {
 }
 .email-container {
     display: flex;
-    align-items: center; /* Alinha verticalmente a imagem e o texto */
+    align-items: center; /* Alinha verticalmente a imagem e os textos */
     justify-content: center; /* Centraliza horizontalmente */
     margin-top: 10px; /* Espaço acima do contêiner do email */
 }
@@ -198,4 +194,21 @@ p {
     margin-right: 10px; /* Espaço à direita da imagem */
 }
 
+.email-list {
+    display: flex;
+    flex-direction: column; /* Coloca os emails um abaixo do outro */
+    margin: 0; /* Remove a margem padrão da lista */
+    padding: 0; /* Remove o padding padrão da lista */
+}
 
+.email-list p {
+    margin: 0; /* Remove a margem dos parágrafos */
+    line-height: 1.5; /* Ajusta o espaçamento entre linhas */
+    text-align: left; /* Alinha o texto à esquerda, se preferir */
+}
+
+.email {
+    font-size: 1.5rem;
+    font-family: 'NovaFonteNavbar', sans-serif; /* Altere para a fonte desejada */
+    color: #ab75fa /* Altere para a cor desejada */
+}
